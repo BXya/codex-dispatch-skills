@@ -1,8 +1,10 @@
 # Codex Dispatch Skills
 
-A locally adapted copy of Superpowers' `dispatching-parallel-agents` skill for coordinating independent tasks with subagents.
+An unmodified upstream copy of Superpowers' `dispatching-parallel-agents` skill from v6.0.0–v6.1.1 for coordinating independent tasks with subagents.
 
-This is an independent redistribution, not an official OpenAI or Superpowers release. See [SOURCE.md](SOURCE.md) for provenance and the local changes.
+This is an independent redistribution, not an official OpenAI or Superpowers release. See [SOURCE.md](SOURCE.md) for provenance and upstream version details.
+
+Upstream revised this skill in v6.2.0 and later; use [obra/superpowers](https://github.com/obra/superpowers) directly for the latest version.
 
 ## Included skill
 
@@ -48,7 +50,7 @@ Start a new Codex session and invoke `$dispatching-parallel-agents` with a task 
 
 - The host assistant must provide subagent tools. The skill does not add those tools.
 - `Subagent (general-purpose)` in the examples is illustrative text, not a portable API. Tool names, dispatch grouping, and actual concurrency depend on the host runtime.
-- The local instructions are preserved as received. In particular, the statement about dispatching in one response should not be treated as a runtime guarantee.
+- The upstream content is unmodified. In particular, the statement about dispatching in one response should not be treated as a runtime guarantee.
 - Historical test outcomes in the skill are upstream examples, not test results for this distribution. Packaging and static checks do not establish end-to-end subagent behavior.
 
 ## License
